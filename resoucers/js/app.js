@@ -26,15 +26,15 @@ for (let a = 0; a < inputs.length; a++) {
   }
 }
 
-// if (inputsCount >= 1) {
-//   for (let i = 0; i < inputs.length; i++) {
-//     inputs[i].removeAttribute('required');
-//   }
-// } else {
-//   for (let i = 0; i < inputs.length; i++) {
-//     inputs[i].setAttribute('required', '');
-//   }
-// }
+if (inputsCount >= 1) {
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].removeAttribute('required');
+  }
+} else {
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].setAttribute('required', '');
+  }
+}
 
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener('click', () => {
@@ -55,5 +55,3 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-
-
